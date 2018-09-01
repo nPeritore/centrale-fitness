@@ -40323,49 +40323,49 @@ module.exports = __webpack_require__.p + "img/002-newsletter.png";
 /* 741 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/car.png";
+module.exports = __webpack_require__.p + "centrale-fitness/img/car.png";
 
 /***/ }),
 /* 742 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/moduleIcone.png";
+module.exports = __webpack_require__.p + "centrale-fitness/img/moduleIcone.png";
 
 /***/ }),
 /* 743 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/001-event.png";
+module.exports = __webpack_require__.p + "centrale-fitness/img/001-event.png";
 
 /***/ }),
 /* 744 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/003-goal.png";
+module.exports = __webpack_require__.p + "centrale-fitness/img/003-goal.png";
 
 /***/ }),
 /* 745 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/iphone_1.png";
+module.exports = __webpack_require__.p + "centrale-fitness/img/iphone_1.png";
 
 /***/ }),
 /* 746 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/module.png";
+module.exports = __webpack_require__.p + "centrale-fitness/img/module.png";
 
 /***/ }),
 /* 747 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/qrcode.png";
+module.exports = __webpack_require__.p + "centrale-fitness/img/qrcode.png";
 
 /***/ }),
 /* 748 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/store.png";
+module.exports = __webpack_require__.p + "centrale-fitness/img/store.png";
 
 /***/ }),
 /* 749 */
