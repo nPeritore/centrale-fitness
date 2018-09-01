@@ -40263,61 +40263,61 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*!
 /* 731 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/1.jpg";
+module.exports = __webpack_require__.p + "centrale-fitness/img/1.jpg";
 
 /***/ }),
 /* 732 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/2.jpg";
+module.exports = __webpack_require__.p + "centrale-fitness/img/2.jpg";
 
 /***/ }),
 /* 733 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/3.jpg";
+module.exports = __webpack_require__.p + "centrale-fitness/img/3.jpg";
 
 /***/ }),
 /* 734 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/4.jpg";
+module.exports = __webpack_require__.p + "centrale-fitness/img/4.jpg";
 
 /***/ }),
 /* 735 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/5.jpg";
+module.exports = __webpack_require__.p + "centrale-fitness/img/5.jpg";
 
 /***/ }),
 /* 736 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/6.jpg";
+module.exports = __webpack_require__.p + "centrale-fitness/img/6.jpg";
 
 /***/ }),
 /* 737 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/001-phone-number.png";
+module.exports = __webpack_require__.p + "centrale-fitness/img/001-phone-number.png";
 
 /***/ }),
 /* 738 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/004-envelope.png";
+module.exports = __webpack_require__.p + "centrale-fitness/img/004-envelope.png";
 
 /***/ }),
 /* 739 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/001-placeholder.png";
+module.exports = __webpack_require__.p + "centrale-fitness/img/001-placeholder.png";
 
 /***/ }),
 /* 740 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/002-newsletter.png";
+module.exports = __webpack_require__.p + "centrale-fitness/img/002-newsletter.png";
 
 /***/ }),
 /* 741 */
