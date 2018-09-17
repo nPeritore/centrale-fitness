@@ -3262,9 +3262,9 @@ exports.default = {
 /* unused harmony export Row */
 /* unused harmony export Col */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return Navbar; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return NavbarBrand; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return NavbarToggler; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return Nav; });
+/* unused harmony export NavbarBrand */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return NavbarToggler; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return Nav; });
 /* unused harmony export NavItem */
 /* unused harmony export NavDropdown */
 /* unused harmony export NavLink */
@@ -3333,7 +3333,7 @@ exports.default = {
 /* unused harmony export TabContent */
 /* unused harmony export TabPane */
 /* unused harmony export Jumbotron */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return Collapse; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return Collapse; });
 /* unused harmony export ListGroupItem */
 /* unused harmony export ListGroupItemText */
 /* unused harmony export ListGroupItemHeading */
@@ -19536,15 +19536,20 @@ var HeaderLinks = function (_PureComponent) {
   };
 
   HeaderLinks.prototype.render = function render() {
+    var _this2 = this;
+
     return _jsx('header', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* Navbar */], {
       className: 'navbarCf',
       color: 'faded',
       light: true,
       expand: 'md',
       style: colorBgNav
-    }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* NavbarBrand */], {
+    }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_2_react_router_dom_Link___default.a, {
       className: 'navbarBrandCf',
-      href: '/'
+      to: '/',
+      onClick: function onClick() {
+        return window.scrollTo(0, 0);
+      }
     }, void 0, _jsx('span', {
       style: { margin: 'auto', fontFamily: 'BjornLight' }
     }, void 0, 'Centrale Fitness\xA0'), _jsx(__WEBPACK_IMPORTED_MODULE_3_react_svg_inline___default.a, {
@@ -19553,39 +19558,69 @@ var HeaderLinks = function (_PureComponent) {
       height: '35px',
       style: { marginTop: '4px' },
       svg: __WEBPACK_IMPORTED_MODULE_4_src_assets_images_logoCf_svg___default.a
-    })), _jsx(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* NavbarToggler */], {
+    })), _jsx(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* NavbarToggler */], {
       onClick: this.toggle
-    }), _jsx(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["o" /* Collapse */], {
+    }), _jsx(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* Collapse */], {
       className: 'navbarCollapseCf',
       isOpen: this.state.isOpen,
       navbar: true
-    }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["p" /* Nav */], {
+    }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["o" /* Nav */], {
       className: 'ml-auto',
       navbar: true,
       style: { textAlign: 'center' }
     }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_2_react_router_dom_Link___default.a, {
       to: '/',
-      className: 'navbarLinksCf'
+      className: 'navbarLinksCf',
+      onClick: function onClick() {
+        window.scrollTo(0, 0);
+        _this2.setState({
+          isOpen: false
+        });
+      }
     }, void 0, _jsx('span', {
       className: 'navbarLinksTextCf'
     }, void 0, 'Notre Solution')), _jsx(__WEBPACK_IMPORTED_MODULE_2_react_router_dom_Link___default.a, {
       to: '/application',
-      className: 'navbarLinksCf'
+      className: 'navbarLinksCf',
+      onClick: function onClick() {
+        window.scrollTo(0, 0);
+        _this2.setState({
+          isOpen: false
+        });
+      }
     }, void 0, _jsx('span', {
       className: 'navbarLinksTextCf'
     }, void 0, 'Nos Applications')), _jsx(__WEBPACK_IMPORTED_MODULE_2_react_router_dom_Link___default.a, {
       to: '/intranet',
-      className: 'navbarLinksCf'
+      className: 'navbarLinksCf',
+      onClick: function onClick() {
+        window.scrollTo(0, 0);
+        _this2.setState({
+          isOpen: false
+        });
+      }
     }, void 0, _jsx('span', {
       className: 'navbarLinksTextCf'
     }, void 0, 'Pour les g\xE9rants')), _jsx(__WEBPACK_IMPORTED_MODULE_2_react_router_dom_Link___default.a, {
       to: '/salles',
-      className: 'navbarLinksCf'
+      className: 'navbarLinksCf',
+      onClick: function onClick() {
+        window.scrollTo(0, 0);
+        _this2.setState({
+          isOpen: false
+        });
+      }
     }, void 0, _jsx('span', {
       className: 'navbarLinksTextCf'
     }, void 0, 'Nos salles')), _jsx(__WEBPACK_IMPORTED_MODULE_2_react_router_dom_Link___default.a, {
       to: '/media',
-      className: 'navbarLinksCf'
+      className: 'navbarLinksCf',
+      onClick: function onClick() {
+        window.scrollTo(0, 0);
+        _this2.setState({
+          isOpen: false
+        });
+      }
     }, void 0, _jsx('span', {
       className: 'navbarLinksTextCf'
     }, void 0, 'M\xE9dia'))))));
@@ -19662,7 +19697,7 @@ var App = function App(props) {
   return _jsx(__WEBPACK_IMPORTED_MODULE_2_react_redux__["a" /* Provider */], {
     store: props.store
   }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_5_react_router_dom_HashRouter___default.a, {
-    forceRefresh: !supportsHistory,
+    forceRefresh: supportsHistory,
     basename: "/centrale-fitness",
     keyLength: 12
   }, void 0, _jsx('div', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_6_COMPONENTS_header__["a" /* default */], {}), _jsx(__WEBPACK_IMPORTED_MODULE_3_react_router_dom_Switch___default.a, {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_4_react_router_dom_Route___default.a, {
@@ -20850,7 +20885,7 @@ var myBody = function (_PureComponent) {
       style: { fontWeight: 'bold' }
     }, void 0, 'R\xE9pondez aux besoins des sportifs !'), _jsx('h5', {
       style: { margin: '30px 0' }
-    }, void 0, 'Notre solution s\'organise sur un site d\xE9di\xE9 aux g\xE9rants des salles de sport ainsi qu\'une application IOS/android destin\xE9e aux utilisateurs finaux. Boostez la fr\xE9quetation de votre salle de sport gr\xE2ce \xE0 la multitude de possibilit\xE9s que vous offre Centrale Fitness'), _jsx('h5', {
+    }, void 0, 'Notre solution s\'organise sur un site d\xE9di\xE9 aux g\xE9rants des salles de sport ainsi qu\'une application IOS/android destin\xE9e aux utilisateurs finaux. Boostez la fr\xE9quentation de votre salle de sport gr\xE2ce \xE0 la multitude de possibilit\xE9s que vous offre Centrale Fitness.'), _jsx('h5', {
       style: { fontWeight: 'bold' }
     }, void 0, 'La cr\xE9ation d\u2019\xE9v\xE9nements'), _jsx('p', {}, void 0, 'Le g\xE9rant peut r\xE9unir ses adh\xE9rents autour d\u2019un objectif commun pour une certaine dur\xE9e. Les adh\xE9rents de la salle se rassemblent alors et se challengent entre eux.'), _jsx('h5', {
       style: { fontWeight: 'bold', marginTop: '15px' }
@@ -21063,7 +21098,7 @@ var media = function (_PureComponent) {
       className: 'alignItemsBg'
     }, void 0, _jsx('h3', {
       style: { width: '90%', margin: 'auto', padding: '15px 15px' }
-    }, void 0, 'Une plateforme unique en son genre permettant de vous aider \xE0 g\xE9rer et d\u2019optimiser la fr\xE9quentions de votre salle'))), _jsx(__WEBPACK_IMPORTED_MODULE_1_react_grid_system__["Row"], {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_react_grid_system__["Col"], {
+    }, void 0, 'Une plateforme unique en son genre permettant de vous aider \xE0 g\xE9rer et d\u2019optimiser la fr\xE9quention de votre salle'))), _jsx(__WEBPACK_IMPORTED_MODULE_1_react_grid_system__["Row"], {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1_react_grid_system__["Col"], {
       xl: 4,
       lg: 4,
       md: 4,
@@ -21117,7 +21152,7 @@ var media = function (_PureComponent) {
       fill: 'white',
       alt: 'challenge',
       svg: __WEBPACK_IMPORTED_MODULE_5__assets_images_intranet_001_broken_link_svg___default.a
-    }), _jsx(__WEBPACK_IMPORTED_MODULE_3_reactstrap__["j" /* CardBody */], {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_3_reactstrap__["k" /* CardText */], {}, void 0, _jsx('h5', {}, void 0, 'Renforcez vos liens')), _jsx(__WEBPACK_IMPORTED_MODULE_3_reactstrap__["k" /* CardText */], {}, void 0, 'Gr\xE2ce \xE0 son aspect sociale bas\xE9 sur la communication, d\xE9veloppez vos relations avec vos clients'))))), _jsx(__WEBPACK_IMPORTED_MODULE_1_react_grid_system__["Col"], {
+    }), _jsx(__WEBPACK_IMPORTED_MODULE_3_reactstrap__["j" /* CardBody */], {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_3_reactstrap__["k" /* CardText */], {}, void 0, _jsx('h5', {}, void 0, 'Renforcez vos liens')), _jsx(__WEBPACK_IMPORTED_MODULE_3_reactstrap__["k" /* CardText */], {}, void 0, 'Gr\xE2ce \xE0 son aspect social bas\xE9 sur la communication, d\xE9veloppez vos relations avec vos clients'))))), _jsx(__WEBPACK_IMPORTED_MODULE_1_react_grid_system__["Col"], {
       xl: 4,
       lg: 4,
       md: 4,
@@ -21167,7 +21202,7 @@ var media = function (_PureComponent) {
       style: { fontWeight: 'bold', paddingBottom: '30px' }
     }, void 0, 'G\xE9rez l\'\xE9cosyst\xE8me de votre salle !'), _jsx('h5', {
       style: { paddingTop: '15px' }
-    }, void 0, 'Cr\xE9er des \xE9v\xE9nements afin de rassembler et de sociabiliser l\u2019ensemble de vos utilisateurs autour d\u2019un th\xE8me en commun. Etablissez une atmosph\xE8re de travail ludique et collectif pour parfaire un but commun. Donner la possibilit\xE9 \xE0 vos clients de remporter des gains afin de r\xE9compenser les meilleures performances.'))), _jsx(__WEBPACK_IMPORTED_MODULE_1_react_grid_system__["Col"], {
+    }, void 0, 'Cr\xE9ez des \xE9v\xE9nements afin de rassembler et de sociabiliser l\u2019ensemble de vos utilisateurs autour d\u2019un th\xE8me en commun. Etablissez une atmosph\xE8re de travail ludique et collectif pour parfaire un but commun. Donner la possibilit\xE9 \xE0 vos clients de remporter des gains afin de r\xE9compenser les meilleures performances.'))), _jsx(__WEBPACK_IMPORTED_MODULE_1_react_grid_system__["Col"], {
       xl: 6,
       lg: 6,
       md: 6,
@@ -21252,7 +21287,7 @@ var media = function (_PureComponent) {
       className: 'homepageColText'
     }, void 0, _jsx('h2', {
       style: { fontWeight: 'bold', marginBottom: '30px' }
-    }, void 0, 'Personnalis\xE9s les programmes de vos clients !'), _jsx('h5', {
+    }, void 0, 'Personnalisez les programmes de vos clients !'), _jsx('h5', {
       style: { marginTop: '15px' }
     }, void 0, 'Outre le collectif, la plateforme se centre aussi au niveau individuel afin de r\xE9pondre aux demandes de chaque client. Les g\xE9rants de salles ont la possibilit\xE9 d\u2019\xE9tablir des programmes personnalis\xE9s pour que chaque client fixe et r\xE9alise ses propres objectifs.'))), _jsx(__WEBPACK_IMPORTED_MODULE_1_react_grid_system__["Col"], {
       xl: 6,
@@ -21300,9 +21335,9 @@ var media = function (_PureComponent) {
       style: { fontWeight: 'bold', marginBottom: '30px' }
     }, void 0, 'Analysez les efforts de vos clients ainsi que votre \xE9cosyst\xE8me'), _jsx('h5', {
       style: { marginBottom: '15px' }
-    }, void 0, 'Consultez l\u2019ensemble des statistiques \xE9tablis dans votre salle. Analysez la fr\xE9quentation des machines, l\u2019\xE9nergie total produite ou encore les progr\xE8s de chaque utilisateur afin de les suivre en temps r\xE9el !'), _jsx('h5', {
+    }, void 0, 'Consultez l\u2019ensemble des statistiques \xE9tablies dans votre salle. Analysez la fr\xE9quentation des machines, l\u2019\xE9nergie totale produite ou encore les progr\xE8s de chaque utilisateur afin de les suivre en temps r\xE9el !'), _jsx('h5', {
       style: { marginBottom: '15px' }
-    }, void 0, 'Fr\xE9quentation, utilisation machine, Energie total produite, gain d\'utilisateur par mois sont autant d\'atouts qui serviront \xE0 optimiser votre entreprise !'))), _jsx(__WEBPACK_IMPORTED_MODULE_1_react_grid_system__["Col"], {
+    }, void 0, 'Fr\xE9quentation, utilisation machine, energie totale produite, gain d\'utilisateur par mois sont autant d\'atouts qui serviront \xE0 optimiser votre entreprise !'))), _jsx(__WEBPACK_IMPORTED_MODULE_1_react_grid_system__["Col"], {
       xl: 6,
       lg: 6,
       md: 6,
@@ -32705,6 +32740,7 @@ function (_React$Component) {
     _this.getChildNodes = _this.getChildNodes.bind(_assertThisInitialized(_this));
     _this.getSlideHeight = _this.getSlideHeight.bind(_assertThisInitialized(_this));
     _this.findMaxHeightSlide = _this.findMaxHeightSlide.bind(_assertThisInitialized(_this));
+    _this.renderControls = _this.renderControls.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -32766,6 +32802,16 @@ function (_React$Component) {
         } else {
           this.stopAutoplay();
         }
+      }
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(nextProps, nextState) {
+      var slideChanged = nextState.currentSlide !== this.state.currentSlide;
+      var heightModeChanged = nextProps.heightMode !== this.props.heightMode;
+
+      if (slideChanged || heightModeChanged) {
+        this.setDimensions();
       }
     }
   }, {
@@ -33161,13 +33207,14 @@ function (_React$Component) {
       }
 
       this.props.beforeSlide(this.state.currentSlide, index);
+      var previousSlide = this.state.currentSlide;
       this.setState({
         currentSlide: index
       }, function () {
         return setTimeout(function () {
           _this4.resetAutoplay();
 
-          if (index !== _this4.state.currentSlide) {
+          if (index !== previousSlide) {
             _this4.props.afterSlide(index);
           }
         }, props.speed);
@@ -33328,7 +33375,8 @@ function (_React$Component) {
     value: function getSlideHeight(props) {
       var childNodes = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
       var heightMode = props.heightMode,
-          vertical = props.vertical;
+          vertical = props.vertical,
+          initialSlideHeight = props.initialSlideHeight;
       var firstSlide = childNodes[0];
 
       if (firstSlide && heightMode === 'first') {
@@ -33343,7 +33391,7 @@ function (_React$Component) {
         return childNodes[this.state.currentSlide].offsetHeight;
       }
 
-      return 100;
+      return initialSlideHeight || 100;
     }
   }, {
     key: "setDimensions",
@@ -33609,34 +33657,40 @@ function (_React$Component) {
     value: function renderControls() {
       var _this7 = this;
 
-      return this.controlsMap.map(function (_ref) {
-        var funcName = _ref.funcName,
-            key = _ref.key;
-        var func = _this7.props[funcName];
-        return func && typeof func === 'function' && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-          className: "slider-control-".concat(key.toLowerCase()),
-          style: _this7.getDecoratorStyles(key),
-          key: key
-        }, func({
-          currentSlide: _this7.state.currentSlide,
-          slideCount: _this7.state.slideCount,
-          frameWidth: _this7.state.frameWidth,
-          slideWidth: _this7.state.slideWidth,
-          slidesToScroll: _this7.state.slidesToScroll,
-          cellSpacing: _this7.props.cellSpacing,
-          slidesToShow: _this7.state.slidesToShow,
-          wrapAround: _this7.props.wrapAround,
-          nextSlide: function nextSlide() {
-            return _this7.nextSlide();
-          },
-          previousSlide: function previousSlide() {
-            return _this7.previousSlide();
-          },
-          goToSlide: function goToSlide(index) {
-            return _this7.goToSlide(index);
-          }
-        }));
-      });
+      if (this.props.withoutControls) {
+        return this.controlsMap.map(function () {
+          return null;
+        });
+      } else {
+        return this.controlsMap.map(function (_ref) {
+          var funcName = _ref.funcName,
+              key = _ref.key;
+          var func = _this7.props[funcName];
+          return func && typeof func === 'function' && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+            className: "slider-control-".concat(key.toLowerCase()),
+            style: _this7.getDecoratorStyles(key),
+            key: key
+          }, func({
+            currentSlide: _this7.state.currentSlide,
+            slideCount: _this7.state.slideCount,
+            frameWidth: _this7.state.frameWidth,
+            slideWidth: _this7.state.slideWidth,
+            slidesToScroll: _this7.state.slidesToScroll,
+            cellSpacing: _this7.props.cellSpacing,
+            slidesToShow: _this7.state.slidesToShow,
+            wrapAround: _this7.props.wrapAround,
+            nextSlide: function nextSlide() {
+              return _this7.nextSlide();
+            },
+            previousSlide: function previousSlide() {
+              return _this7.previousSlide();
+            },
+            goToSlide: function goToSlide(index) {
+              return _this7.goToSlide(index);
+            }
+          }));
+        });
+      }
     }
   }, {
     key: "render",
@@ -33732,6 +33786,7 @@ Carousel.propTypes = {
   swiping: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool,
   vertical: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool,
   width: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
+  withoutControls: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool,
   wrapAround: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool
 };
 Carousel.defaultProps = {
@@ -33769,6 +33824,7 @@ Carousel.defaultProps = {
   swiping: true,
   vertical: false,
   width: '100%',
+  withoutControls: false,
   wrapAround: false
 };
 
@@ -58300,4 +58356,4 @@ module.exports = __webpack_require__(351);
 
 /***/ })
 ],[1000]);
-//# sourceMappingURL=js.28db2d44853c7566a9ce.js.map
+//# sourceMappingURL=js.989da7bded45db9b5d99.js.map
