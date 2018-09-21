@@ -20256,7 +20256,7 @@ var media = function (_PureComponent) {
           console.log(error);
         });
         */
-      __WEBPACK_IMPORTED_MODULE_5_axios___default.a.post('http://163.5.84.201:5540/notification', { user: user }).then(function (response) {
+      __WEBPACK_IMPORTED_MODULE_5_axios___default.a.post('http://psyycker.fr.nf:5540/notification', { user: user }).then(function (response) {
         console.log('La requête a bien été envoyé');
         console.log(response);
       }).catch(function (error) {
@@ -20524,7 +20524,7 @@ var myBody = function (_PureComponent) {
         email: _this.state.userEmail
       };
       console.log(user);
-      __WEBPACK_IMPORTED_MODULE_4_axios_index___default.a.post('http://163.5.84.201:5540/newsletter', { user: user }).then(function (response) {
+      __WEBPACK_IMPORTED_MODULE_4_axios_index___default.a.post('http://psyycker.fr.nf:5540/newsletter', { user: user }).then(function (response) {
         /* alert('Votre formulaire a bien été envoyé'); */
         console.log(response);
       }).catch(function (error) {
@@ -58356,4 +58356,4 @@ module.exports = __webpack_require__(351);
 
 /***/ })
 ],[1000]);
-//# sourceMappingURL=js.989da7bded45db9b5d99.js.map
+//# sourceMappingURL=js.f8a44334e4ead2db6037.js.map
